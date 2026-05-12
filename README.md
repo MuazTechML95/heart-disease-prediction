@@ -1,5 +1,3 @@
-# heart-disease-prediction
-ML web app to predict heart disease risk using Random Forest Classifier &amp; Streamlit
 # ❤️ Heart Disease Prediction App
 
 > A Machine Learning web application that predicts the risk of heart disease based on patient clinical data — built with Random Forest Classifier and deployed using Streamlit.

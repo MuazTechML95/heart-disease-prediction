@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import os
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -99,9 +100,10 @@ label, .stSelectbox label, .stNumberInput label, .stSlider label {
 # ─── Load Models ───────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_models():
-    model  = joblib.load("model_rf.pkl")
-    scaler = joblib.load("scaler.pkl")
-    le     = joblib.load("label_encoder.pkl")
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    model  = joblib.load(os.path.join(base_path, "model_rf.pkl"))
+    scaler = joblib.load(os.path.join(base_path, "scaler.pkl"))
+    le     = joblib.load(os.path.join(base_path, "label_encoder.pkl"))
     return model, scaler, le
 
 try:

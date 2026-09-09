@@ -3,6 +3,10 @@
 > A Machine Learning web application that predicts the risk of heart disease based on patient clinical data — built with Random Forest Classifier and deployed using Streamlit.
 
 ---
+# 🌐 Live Demo
+
+🚀 Try the live application:
+https://heart-disease-prediction-6fkyfo7gzkrzejrw6zu576.streamlit.app/
 
 ## 📌 Project Overview
 
